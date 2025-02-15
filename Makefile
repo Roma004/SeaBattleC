@@ -3,10 +3,10 @@
 all: build run
 
 build:
-	gcc test.c src/*.c -o asd -Iinclude -ggdb3
+	gcc main.c src/*.c src/**/*.c -o sea_battle -Iinclude -ggdb3
 
 run:
-	./asd 2> err.log
+	./sea_battle 2> err.log
 
 clear:
-	rm asd
+	rm sea_battle err.log
